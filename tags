@@ -827,6 +827,7 @@ Big5SMModel	venv/lib/python3.6/site-packages/pip/_vendor/requests/packages/chard
 BinOp	venv/include/python3.6m/Python-ast.h	/^        } BinOp;$/;"	m	union:_expr::__anon3f708b081d0a	typeref:struct:_expr::__anon3f708b081d0a::__anon3f708b081f08
 BinOp	venv/include/python3.6m/Python-ast.h	/^#define BinOp(/;"	d
 BinOp_kind	venv/include/python3.6m/Python-ast.h	/^enum _expr_kind {BoolOp_kind=1, BinOp_kind=2, UnaryOp_kind=3, Lambda_kind=4,$/;"	e	enum:_expr_kind
+BinaryTree	maths/factortree.py	/^class BinaryTree:$/;"	c
 Binnumber	venv/lib/python3.6/tokenize.py	/^Binnumber = r'0[bB](?:_?[01])+'$/;"	v
 BitAnd	venv/include/python3.6m/Python-ast.h	/^                         LShift=8, RShift=9, BitOr=10, BitXor=11, BitAnd=12,$/;"	e	enum:_operator
 BitOr	venv/include/python3.6m/Python-ast.h	/^                         LShift=8, RShift=9, BitOr=10, BitXor=11, BitAnd=12,$/;"	e	enum:_operator
@@ -3587,6 +3588,7 @@ MutableMapping	venv/lib/python3.6/_collections_abc.py	/^class MutableMapping(Map
 MutableSequence	venv/lib/python3.6/_collections_abc.py	/^class MutableSequence(Sequence):$/;"	c
 MutableSet	venv/lib/python3.6/_collections_abc.py	/^class MutableSet(Set):$/;"	c
 MyArgparser	dumb_crypt.py	/^class MyArgparser(argparse.ArgumentParser):$/;"	c
+MyArgparser	maths/factortree.py	/^class MyArgparser(argparse.ArgumentParser):$/;"	c
 NAME	venv/include/python3.6m/token.h	/^#define NAME	/;"	d
 NAME	venv/lib/python3.6/site-packages/pip/_vendor/packaging/requirements.py	/^NAME = IDENTIFIER("name")$/;"	v
 NAME	venv/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/requirements.py	/^NAME = IDENTIFIER("name")$/;"	v
@@ -10468,6 +10470,8 @@ __index__	venv/lib/python3.6/operator.py	/^__index__ = index$/;"	v
 __init__	IOLogic.py	/^    def __init__(self):$/;"	m	class:TempHistory
 __init__	IOLogic.py	/^    def __init__(self):$/;"	m	class:TerminalHistory
 __init__	dumb_crypt.py	/^    def __init__(self):$/;"	m	class:MyArgparser
+__init__	maths/factortree.py	/^    def __init__(self):$/;"	m	class:MyArgparser
+__init__	maths/factortree.py	/^    def __init__(self, value, left=None, right=None):$/;"	m	class:BinaryTree
 __init__	venv/lib/python3.6/__future__.py	/^    def __init__(self, optionalRelease, mandatoryRelease, compiler_flag):$/;"	m	class:_Feature
 __init__	venv/lib/python3.6/_collections_abc.py	/^    def __init__(self, mapping):$/;"	m	class:MappingView
 __init__	venv/lib/python3.6/_dummy_thread.py	/^    def __init__(self):$/;"	m	class:LockType
@@ -15779,6 +15783,7 @@ __stdcall	venv/lib/python3.6/site-packages/Naked/toolshed/c/python.c	/^    #defi
 __stdcall	venv/lib/python3.6/site-packages/Naked/toolshed/c/shell.c	/^    #define __stdcall$/;"	d	file:
 __stdcall	venv/lib/python3.6/site-packages/Naked/toolshed/c/system.c	/^    #define __stdcall$/;"	d	file:
 __stdcall	venv/lib/python3.6/site-packages/Naked/toolshed/c/types.c	/^    #define __stdcall$/;"	d	file:
+__str__	maths/factortree.py	/^    def __str__(self):$/;"	m	class:BinaryTree
 __str__	venv/lib/python3.6/collections/__init__.py	/^    def __str__(self): return str(self.data)$/;"	m	class:UserString
 __str__	venv/lib/python3.6/enum.py	/^    def __str__(self):$/;"	m	class:Enum
 __str__	venv/lib/python3.6/enum.py	/^    def __str__(self):$/;"	m	class:Flag
@@ -17906,6 +17911,7 @@ acquire	venv/lib/python3.6/site-packages/pip/_vendor/lockfile/symlinklockfile.py
 activate	venv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def activate(self, path=None, replace=False):$/;"	m	class:Distribution
 activate	venv/lib/python3.6/site-packages/pkg_resources/__init__.py	/^    def activate(self, path=None, replace=False):$/;"	m	class:Distribution
 adapt	venv/lib/python3.6/encodings/punycode.py	/^def adapt(delta, first, numchars):$/;"	f
+add	maths/factortree.py	/^    def add(self, tree):$/;"	m	class:BinaryTree
 add	venv/lib/python3.6/_collections_abc.py	/^    def add(self, value):$/;"	m	class:MutableSet
 add	venv/lib/python3.6/_weakrefset.py	/^    def add(self, item):$/;"	m	class:WeakSet
 add	venv/lib/python3.6/operator.py	/^def add(a, b):$/;"	f
@@ -18301,6 +18307,7 @@ arg	venv/lib/python3.6/site-packages/Naked/commandline.py	/^    def arg(self, ar
 arg_ty	venv/include/python3.6m/Python-ast.h	/^typedef struct _arg *arg_ty;$/;"	t	typeref:struct:_arg *
 arglist	venv/include/python3.6m/graminit.h	/^#define arglist /;"	d
 argparser	aaa.py	/^def argparser():$/;"	f
+args	maths/experimental_probability.py	/^        args = [input("{}: ".format(arg)) for arg in enumerate(parameters[1:])]$/;"	v
 args	venv/include/python3.6m/Python-ast.h	/^            arguments_ty args;$/;"	m	struct:_expr::__anon3f708b081d0a::__anon3f708b082108	typeref:typename:arguments_ty
 args	venv/include/python3.6m/Python-ast.h	/^            arguments_ty args;$/;"	m	struct:_stmt::__anon3f708b08060a::__anon3f708b080708	typeref:typename:arguments_ty
 args	venv/include/python3.6m/Python-ast.h	/^            arguments_ty args;$/;"	m	struct:_stmt::__anon3f708b08060a::__anon3f708b080808	typeref:typename:arguments_ty
@@ -19586,6 +19593,7 @@ count_duplicates	venv/lib/python3.6/site-packages/Naked/toolshed/c/types.pyx	/^ 
 count_duplicates	venv/lib/python3.6/site-packages/Naked/toolshed/types.py	/^    def count_duplicates(self):$/;"	m	class:XList
 countedArray	venv/lib/python3.6/site-packages/pip/_vendor/pyparsing.py	/^def countedArray( expr, intExpr=None ):$/;"	f
 countedArray	venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py	/^def countedArray( expr, intExpr=None ):$/;"	f
+counter	ass_to_srt.py	/^    counter = 0$/;"	v
 coverage	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile	/^coverage:$/;"	t
 coverage-lcov	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile	/^coverage-lcov:$/;"	t
 coverage-report	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile	/^coverage-report:$/;"	t
@@ -20289,6 +20297,7 @@ dfa	venv/include/python3.6m/grammar.h	/^} dfa;$/;"	t	typeref:struct:__anond45c1a
 dh_test	venv/lib/python3.6/site-packages/wheel/signatures/djbec.py	/^def dh_test():$/;"	f
 di_name	venv/include/python3.6m/sip.h	/^    const char *di_name;$/;"	m	struct:_sipDoubleInstanceDef	typeref:typename:const char *
 di_val	venv/include/python3.6m/sip.h	/^    double di_val;$/;"	m	struct:_sipDoubleInstanceDef	typeref:typename:double
+dialogue_string	ass_to_srt.py	/^        dialogue_string = line[start_dialogue_index:-1]$/;"	v
 dict	venv/include/python3.6m/pystate.h	/^    PyObject *dict;  \/* Stores per-thread state *\/$/;"	m	struct:_ts	typeref:typename:PyObject *
 dict	venv/include/python3.6m/sip.h	/^    PyObject *dict;$/;"	m	struct:_sipSimpleWrapper	typeref:typename:PyObject *
 dictConfig	venv/lib/python3.6/site-packages/pip/compat/dictconfig.py	/^def dictConfig(config):$/;"	f
@@ -21007,6 +21016,7 @@ endTagTableCell	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/html5parse
 endTagTableRowGroup	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/html5parser.py	/^        def endTagTableRowGroup(self, token):$/;"	m	class:getPhases.InRowPhase
 endTagTableRowGroup	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/html5parser.py	/^        def endTagTableRowGroup(self, token):$/;"	m	class:getPhases.InTableBodyPhase
 endTagTr	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/html5parser.py	/^        def endTagTr(self, token):$/;"	m	class:getPhases.InRowPhase
+end_index	ass_to_srt.py	/^def end_index(): return start_index + len("0:00:00")$/;"	f
 endpats	venv/lib/python3.6/tokenize.py	/^endpats = {}$/;"	v
 ends	venv/lib/python3.6/site-packages/Naked/toolshed/c/types.pyx	/^    def ends(self, end_string):$/;"	m	class:XString
 ends	venv/lib/python3.6/site-packages/Naked/toolshed/types.py	/^    def ends(self, end_string):$/;"	m	class:XString
@@ -21181,6 +21191,7 @@ exit_with_status	venv/lib/python3.6/site-packages/Naked/toolshed/c/system.pyx	/^
 exit_with_status	venv/lib/python3.6/site-packages/Naked/toolshed/system.py	/^def exit_with_status(exit=0):$/;"	f
 exit_with_usage	venv/bin/python-config	/^def exit_with_usage(code=1):$/;"	f
 exit_with_usage	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/python-config.py	/^def exit_with_usage(code=1):$/;"	f
+exp_test	maths/experimental_probability.py	/^    def exp_test(*args):$/;"	f	function:experimental_probability	file:
 expand_basedirs	venv/lib/python3.6/site-packages/setuptools/command/easy_install.py	/^    def expand_basedirs(self):$/;"	m	class:easy_install
 expand_default	venv/lib/python3.6/site-packages/pip/baseparser.py	/^    def expand_default(self, option):$/;"	m	class:UpdatingDefaultsHelpFormatter
 expand_dirs	venv/lib/python3.6/site-packages/setuptools/command/easy_install.py	/^    def expand_dirs(self):$/;"	m	class:easy_install
@@ -21219,6 +21230,8 @@ expect_nothing	venv/lib/python3.6/site-packages/yaml/emitter.py	/^    def expect
 expect_scalar	venv/lib/python3.6/site-packages/yaml/emitter.py	/^    def expect_scalar(self):$/;"	m	class:Emitter
 expect_stream_start	venv/lib/python3.6/site-packages/yaml/emitter.py	/^    def expect_stream_start(self):$/;"	m	class:Emitter
 expected	venv/include/python3.6m/parsetok.h	/^    int expected;$/;"	m	struct:__anon34e57e1a0108	typeref:typename:int
+experiment	maths/experimental_probability.py	/^    experiment = globals().get(input("Experiment ({}): ".format(", ".join($/;"	v
+experimental_probability	maths/experimental_probability.py	/^def experimental_probability(test, trials=100):$/;"	f
 expire_after	venv/lib/python3.6/site-packages/pip/_vendor/cachecontrol/heuristics.py	/^def expire_after(delta, date=None):$/;"	f
 exploded	venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py	/^    def exploded(self):$/;"	m	class:_IPAddressBase
 expmod	venv/lib/python3.6/site-packages/wheel/signatures/djbec.py	/^def expmod(b, e, m):$/;"	f
@@ -21351,7 +21364,9 @@ f_localsplus	venv/include/python3.6m/frameobject.h	/^    PyObject *f_localsplus[
 f_stacktop	venv/include/python3.6m/frameobject.h	/^    PyObject **f_stacktop;$/;"	m	struct:_frame	typeref:typename:PyObject **
 f_trace	venv/include/python3.6m/frameobject.h	/^    PyObject *f_trace;          \/* Trace function *\/$/;"	m	struct:_frame	typeref:typename:PyObject *
 f_valuestack	venv/include/python3.6m/frameobject.h	/^    PyObject **f_valuestack;    \/* points after the last local *\/$/;"	m	struct:_frame	typeref:typename:PyObject **
+factor	maths/factortree.py	/^def factor(n):$/;"	f
 factor	venv/include/python3.6m/graminit.h	/^#define factor /;"	d
+factor_tree	maths/factortree.py	/^def factor_tree(n):$/;"	f
 factory	venv/lib/python3.6/importlib/util.py	/^    def factory(cls, loader):$/;"	m	class:LazyLoader
 fdopen	venv/lib/python3.6/os.py	/^def fdopen(fd, *args, **kwargs):$/;"	f
 feature_is_included	venv/lib/python3.6/site-packages/setuptools/dist.py	/^    def feature_is_included(self, name):$/;"	m	class:Distribution
@@ -21672,6 +21687,7 @@ format_option_strings	venv/lib/python3.6/site-packages/pip/baseparser.py	/^    d
 format_size	venv/lib/python3.6/site-packages/pip/utils/__init__.py	/^def format_size(bytes):$/;"	f
 format_spec	venv/include/python3.6m/Python-ast.h	/^            expr_ty format_spec;$/;"	m	struct:_expr::__anon3f708b081d0a::__anon3f708b083008	typeref:typename:expr_ty
 format_string	venv/lib/python3.6/locale.py	/^def format_string(f, val, grouping=False):$/;"	f
+format_tree_prime	maths/factortree.py	/^def format_tree_prime(n):$/;"	f
 format_usage	venv/lib/python3.6/site-packages/pip/baseparser.py	/^    def format_usage(self, usage):$/;"	m	class:PrettyHelpFormatter
 format_value	venv/lib/python3.6/site-packages/pip/_vendor/distlib/_backport/sysconfig.py	/^def format_value(value, vars):$/;"	f
 formattingElements	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/constants.py	/^formattingElements = frozenset([$/;"	v
@@ -23368,6 +23384,7 @@ is_prerelease	venv/lib/python3.6/site-packages/pip/_vendor/packaging/version.py	
 is_prerelease	venv/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/version.py	/^    def is_prerelease(self):$/;"	m	class:LegacyVersion
 is_prerelease	venv/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/version.py	/^    def is_prerelease(self):$/;"	m	class:Version
 is_present	venv/lib/python3.6/site-packages/setuptools/depends.py	/^    def is_present(self, paths=None):$/;"	m	class:Require
+is_prime	maths/factortree.py	/^def is_prime(n):$/;"	f
 is_prime	maths/primes.py	/^def is_prime(n):$/;"	f
 is_private	venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py	/^    def is_private(self):$/;"	m	class:IPv4Address
 is_private	venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py	/^    def is_private(self):$/;"	m	class:IPv6Address
@@ -23830,6 +23847,7 @@ length	venv/lib/python3.6/site-packages/Naked/toolshed/types.py	/^    def length
 length_hint	venv/lib/python3.6/operator.py	/^def length_hint(obj, default=0):$/;"	f
 letter	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/_ihatexml.py	/^letter = " | ".join([baseChar, ideographic])$/;"	v
 letter_number	maths/letter_number.py	/^def letter_number(letter):$/;"	f
+level	maths/experimental_probability.py	/^    level = getattr(logging, input($/;"	v
 level	venv/include/python3.6m/Python-ast.h	/^            int level;$/;"	m	struct:_stmt::__anon3f708b08060a::__anon3f708b081908	typeref:typename:int
 lexists	venv/lib/python3.6/ntpath.py	/^def lexists(path):$/;"	f
 lexists	venv/lib/python3.6/posixpath.py	/^def lexists(path):$/;"	f
@@ -24127,9 +24145,10 @@ macosVersionString	venv/lib/python3.6/site-packages/pkg_resources/__init__.py	/^
 magic	venv/include/python3.6m/pyexpat.h	/^    char* magic; \/* set to PyExpat_CAPI_MAGIC *\/$/;"	m	struct:PyExpat_CAPI	typeref:typename:char *
 magic_check	venv/lib/python3.6/site-packages/setuptools/glob.py	/^magic_check = re.compile('([*?[])')$/;"	v
 magic_check_bytes	venv/lib/python3.6/site-packages/setuptools/glob.py	/^magic_check_bytes = re.compile(b'([*?[])')$/;"	v
-main	aaa.py	/^def main(argv=sys.argv):$/;"	f
+main	aaa.py	/^def main(argv=None):$/;"	f
 main	despace.py	/^def main(text):$/;"	f
 main	dumb_crypt.py	/^def main(argv=None):$/;"	f
+main	maths/factortree.py	/^def main(argv=None):$/;"	f
 main	maths/letter_number.py	/^def main(argv=None):$/;"	f
 main	maths/nth_col_questions.py	/^def main(argv=None):$/;"	f
 main	venv/lib/python3.6/base64.py	/^def main():$/;"	f
@@ -24225,6 +24244,7 @@ map_to_vals	venv/lib/python3.6/site-packages/Naked/toolshed/c/types.pyx	/^    de
 map_to_vals	venv/lib/python3.6/site-packages/Naked/toolshed/types.py	/^    def map_to_vals(self, mapped_function):$/;"	m	class:XDict
 mapped_keys	venv/lib/python3.6/site-packages/pip/_vendor/distlib/metadata.py	/^    mapped_keys = {$/;"	v	class:Metadata
 mappingproxy	venv/lib/python3.6/_collections_abc.py	/^mappingproxy = type(type.__dict__)$/;"	v
+mark	ass_to_srt.py	/^        mark = ",,0,0,0,,"$/;"	v
 markInputline	venv/lib/python3.6/site-packages/pip/_vendor/pyparsing.py	/^    def markInputline( self, markerString = ">!<" ):$/;"	m	class:ParseBaseException
 markInputline	venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py	/^    def markInputline( self, markerString = ">!<" ):$/;"	m	class:ParseBaseException
 markers_pass	venv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def markers_pass(self, req):$/;"	m	class:_ReqExtras
@@ -24761,6 +24781,7 @@ null_ns_handler	venv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__ini
 null_ns_handler	venv/lib/python3.6/site-packages/pkg_resources/__init__.py	/^def null_ns_handler(importer, path_item, packageName, module):$/;"	f
 num_addresses	venv/lib/python3.6/site-packages/pip/_vendor/ipaddress.py	/^    def num_addresses(self):$/;"	m	class:_BaseNetwork
 num_re	venv/lib/python3.6/site-packages/pip/_vendor/distlib/version.py	/^    num_re = re.compile(r'^\\d+(\\.\\d+)*$')$/;"	v	class:Matcher
+num_trials	maths/experimental_probability.py	/^        num_trials = int(input("Trial size: "))$/;"	v
 number	venv/lib/python3.6/site-packages/pip/_vendor/pyparsing.py	/^    number = (sci_real | real | signed_integer).streamline()$/;"	v	class:pyparsing_common
 number	venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py	/^    number = (sci_real | real | signed_integer).streamline()$/;"	v	class:pyparsing_common
 numeric_re	venv/lib/python3.6/site-packages/pip/_vendor/distlib/version.py	/^    numeric_re = re.compile('^(\\d+(\\.\\d+)*)')$/;"	v	class:LegacyMatcher
@@ -24989,6 +25010,7 @@ packrat_cache_stats	venv/lib/python3.6/site-packages/pip/_vendor/pyparsing.py	/^
 packrat_cache_stats	venv/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py	/^    packrat_cache_stats = [0, 0]$/;"	v	class:ParserElement
 padding	venv/include/python3.6m/pyhash.h	/^        unsigned char padding[16];$/;"	m	struct:__anon29c08b5e010a::__anon29c08b5e0408	typeref:typename:unsigned char[16]
 padding	venv/include/python3.6m/pyhash.h	/^        unsigned char padding[16];$/;"	m	struct:__anon29c08b5e010a::__anon29c08b5e0508	typeref:typename:unsigned char[16]
+parameters	maths/experimental_probability.py	/^        parameters = inspect.getargspec(experiment)[0]$/;"	v
 parameters	venv/include/python3.6m/graminit.h	/^#define parameters /;"	d
 pardir	venv/lib/python3.6/ntpath.py	/^pardir = '..'$/;"	v
 pardir	venv/lib/python3.6/posixpath.py	/^pardir = '..'$/;"	v
@@ -25446,6 +25468,7 @@ prev	venv/include/python3.6m/pystate.h	/^    struct _ts *prev;$/;"	m	struct:_ts	
 prev_sys_path	venv/bin/activate_this.py	/^prev_sys_path = list(sys.path)$/;"	v
 previous	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/_inputstream.py	/^    def previous(self):$/;"	m	class:EncodingBytes
 prf	venv/lib/python3.6/hashlib.py	/^        def prf(msg, inner=inner, outer=outer):$/;"	f	function:pbkdf2_hmac	file:
+prime_factor	maths/factortree.py	/^def prime_factor(n):$/;"	f
 print	IOLogic.py	/^    def print(self, *args, sep=' ', end='\\n', file=sys.stdout, flush=False,$/;"	m	class:TempHistory
 print_	venv/lib/python3.6/site-packages/pip/_vendor/requests/packages/urllib3/packages/six.py	/^    def print_(*args, **kwargs):$/;"	f
 print_	venv/lib/python3.6/site-packages/pip/_vendor/requests/packages/urllib3/packages/six.py	/^print_ = getattr(moves.builtins, "print", None)$/;"	v
@@ -25569,6 +25592,7 @@ process_shebang	venv/lib/python3.6/site-packages/pip/_vendor/distlib/wheel.py	/^
 process_tag	venv/lib/python3.6/site-packages/yaml/emitter.py	/^    def process_tag(self):$/;"	m	class:Emitter
 process_template_line	venv/lib/python3.6/site-packages/setuptools/command/egg_info.py	/^    def process_template_line(self, line):$/;"	m	class:FileList
 process_url	venv/lib/python3.6/site-packages/setuptools/package_index.py	/^    def process_url(self, url, retrieve=False):$/;"	m	class:PackageIndex
+product	maths/factortree.py	/^def product(nums):$/;"	f
 profile-opt	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile	/^profile-opt:$/;"	t
 profile-removal	venv/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile	/^profile-removal:$/;"	t
 profile_help	venv/lib/python3.6/site-packages/Naked/app.py	/^            from Naked.commands.profile import help as profile_help$/;"	x	function:main	file:
@@ -26057,6 +26081,7 @@ repr_node	venv/lib/python3.6/site-packages/pip/_vendor/distlib/database.py	/^   
 repr_set	venv/lib/python3.6/reprlib.py	/^    def repr_set(self, x, level):$/;"	m	class:Repr
 repr_slot	venv/include/python3.6m/sip.h	/^    repr_slot,          \/* __repr__ *\/$/;"	e	enum:__anon263f6d7d0403
 repr_str	venv/lib/python3.6/reprlib.py	/^    def repr_str(self, x, level):$/;"	m	class:Repr
+repr_tree	maths/factortree.py	/^def repr_tree(tree, level=0):$/;"	f
 repr_tuple	venv/lib/python3.6/reprlib.py	/^    def repr_tuple(self, x, level):$/;"	m	class:Repr
 represent	venv/lib/python3.6/site-packages/yaml/representer.py	/^    def represent(self, data):$/;"	m	class:BaseRepresenter
 represent_binary	venv/lib/python3.6/site-packages/yaml/representer.py	/^    def represent_binary(self, data):$/;"	m	class:SafeRepresenter
@@ -26467,6 +26492,7 @@ safe_write_bin	venv/lib/python3.6/site-packages/Naked/toolshed/file.py	/^    def
 safer_name	venv/lib/python3.6/site-packages/wheel/bdist_wheel.py	/^def safer_name(name):$/;"	f
 safer_version	venv/lib/python3.6/site-packages/wheel/bdist_wheel.py	/^def safer_version(version):$/;"	f
 safety_flags	venv/lib/python3.6/site-packages/setuptools/command/bdist_egg.py	/^safety_flags = {$/;"	v
+same_bday	maths/experimental_probability.py	/^def same_bday(num_people):$/;"	f
 same_project	venv/lib/python3.6/site-packages/pip/_vendor/distlib/locators.py	/^        def same_project(name1, name2):$/;"	f	member:Locator.convert_url_to_download_info	file:
 samebitset	venv/include/python3.6m/pgenheaders.h	/^#define samebitset /;"	d
 samefile	venv/lib/python3.6/genericpath.py	/^def samefile(f1, f2):$/;"	f
@@ -26476,6 +26502,7 @@ sameopenfile	venv/lib/python3.6/genericpath.py	/^def sameopenfile(fp1, fp2):$/;"
 samestat	venv/lib/python3.6/genericpath.py	/^def samestat(s1, s2):$/;"	f
 sample	venv/lib/python3.6/random.py	/^    def sample(self, population, k):$/;"	m	class:Random
 sample	venv/lib/python3.6/random.py	/^sample = _inst.sample$/;"	v
+sample_space	maths/experimental_probability.py	/^        sample_space = int(input("Sample space ({}): ".format(parameters[0])))$/;"	v
 sanitize	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/serializer.py	/^    sanitize = False$/;"	v	class:HTMLSerializer
 sanitize_css	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_css(self, style):$/;"	m	class:Filter
 sanitize_token	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_token(self, token):$/;"	m	class:Filter
@@ -27288,6 +27315,8 @@ startTagVoidFormatting	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/htm
 startTagXmp	venv/lib/python3.6/site-packages/pip/_vendor/html5lib/html5parser.py	/^        def startTagXmp(self, token):$/;"	m	class:getPhases.InBodyPhase
 start_connect	venv/lib/python3.6/site-packages/pip/_vendor/requests/packages/urllib3/util/timeout.py	/^    def start_connect(self):$/;"	m	class:Timeout
 start_connect	venv/lib/python3.6/site-packages/urllib3/util/timeout.py	/^    def start_connect(self):$/;"	m	class:Timeout
+start_dialogue_index	ass_to_srt.py	/^        start_dialogue_index = line.find(mark) + len(mark)$/;"	v
+start_index	ass_to_srt.py	/^        start_index = len("dialogue: 0,")$/;"	v
 start_new_thread	venv/lib/python3.6/_dummy_thread.py	/^def start_new_thread(function, args, kwargs={}):$/;"	f
 startswith	venv/lib/python3.6/collections/__init__.py	/^    def startswith(self, prefix, start=0, end=_sys.maxsize):$/;"	m	class:UserString
 state	venv/include/python3.6m/grammar.h	/^} state;$/;"	t	typeref:struct:__anond45c1ab80408
@@ -27743,6 +27772,9 @@ timer_trials_benchmark_1k	venv/lib/python3.6/site-packages/Naked/toolshed/benchm
 timer_trials_benchmark_1k	venv/lib/python3.6/site-packages/Naked/toolshed/c/benchmarking.pyx	/^def timer_trials_benchmark_1k(func, repetitions=1000, trials=10):$/;"	f
 timer_trials_benchmark_1m	venv/lib/python3.6/site-packages/Naked/toolshed/benchmarking.py	/^def timer_trials_benchmark_1m(func, repetitions=1000000, trials=10):$/;"	f
 timer_trials_benchmark_1m	venv/lib/python3.6/site-packages/Naked/toolshed/c/benchmarking.pyx	/^def timer_trials_benchmark_1m(func, repetitions=1000000, trials=10):$/;"	f
+timestamp	ass_to_srt.py	/^def timestamp():$/;"	f
+timestamp_1	ass_to_srt.py	/^        timestamp_1 = timestamp()$/;"	v
+timestamp_2	ass_to_srt.py	/^        timestamp_2 = timestamp()$/;"	v
 timestamp_regexp	venv/lib/python3.6/site-packages/yaml/constructor.py	/^    timestamp_regexp = re.compile($/;"	v	class:SafeConstructor
 title	venv/lib/python3.6/collections/__init__.py	/^    def title(self): return self.__class__(self.data.title())$/;"	m	class:UserString
 title	venv/lib/python3.6/site-packages/wheel/test/pydist-schema.json	/^  "title": "Metadata for Python Software Packages 2.0",$/;"	s

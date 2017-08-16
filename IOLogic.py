@@ -14,7 +14,6 @@ except ImportError:
         ActiveState code, adapted from
         <http://code.activestate.com/recipes/134892> by Danny Yoo under
         the Python Software Foundation license.
-
         """
         file_descriptor = sys.stdin.fileno()
         old_settings = termios.tcgetattr(file_descriptor)
@@ -45,7 +44,6 @@ class TempHistory:
 
     Note: I use the term 'echo' to refer to when text is
     shown on the terminal but might not be written to 'sys.stdout'.
-
     """
 
     def __init__(self):
@@ -53,7 +51,6 @@ class TempHistory:
 
         'line' is initially set to '\n' so that the 'record' method
         doesn't raise an error about the string index being out of range.
-
         """
         self.line = '\n'
         self.builtin_print = print
@@ -86,7 +83,6 @@ class TempHistory:
         the terminal to move the text cursor forward to be inline with
         the end of the previous line, and then move up into said line
         (making it the current line again).
-
         """
         line_length = len(self.line)
         for i, char in enumerate(self.line[1:]):
@@ -101,7 +97,6 @@ class TempHistory:
 
         Other than recording the printed text, it behaves exactly like
         the built-in 'print' function.
-
         """
         self.builtin_print(*args, sep=sep, end=end, file=file, flush=flush)
         if record:
@@ -114,7 +109,6 @@ class TempHistory:
         Other than storing the echoed text and optionally stripping the
         echoed newline, it behaves exactly like the built-in 'input'
         function.
-
         """
         if prompt == '':
             prompt = ' \b'
@@ -151,7 +145,6 @@ class TerminalHistory(TempHistory):
 
         Overrides TempHistory's 'record' method, preventing overwriting when
         the line is finished and instead simply creating another line.
-
         """
         if text == '' or text == ' \b':
             return
@@ -173,7 +166,7 @@ def valid_input(prompt='', valids=None, default=None):
         valids = {
             False: ['n', 'false', '0'],
             True: ['y', 'true', '1']
-        }
+            }
     try:
         valids[True]
     except KeyError:

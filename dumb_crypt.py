@@ -4,7 +4,6 @@
 
 Decrypting requires that you know what the decrypted string will be...
 """
-import sys
 import argparse
 import getpass
 import base64
@@ -17,7 +16,8 @@ class MyArgparser(argparse.ArgumentParser):
         self.add_argument("text", help="string to encrypt/decrypt")
         self.add_argument(
             "-d", "--decrypt", action="store_true", default=False,
-            help="decrypt text instead of encrypting")
+            help="decrypt text instead of encrypting"
+            )
 
 
 def encrypt(plaintext):
@@ -47,8 +47,6 @@ def decrypt(ciphertext, key):
 
 def main(argv=None):
     """Encrypt or decrypt a provided string."""
-    if argv is None:
-        argv = sys.argv[1:]
     argparser = MyArgparser()
     args = argparser.parse_args(argv)
     if not args.decrypt:

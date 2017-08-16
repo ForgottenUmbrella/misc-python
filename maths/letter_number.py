@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf-8
 """For a given letter, determine its place in the Roman alphabet."""
-import sys
 import string
 import argparse
 
@@ -24,14 +23,14 @@ def letter_number(letter):
 
 def main(argv=None):
     """Output the number of the letter input."""
-    if argv is None:
-        argv = sys.argv[1:]
     argparser = argparse.ArgumentParser(
-        description="Determine the number of the letter, or the nth letter.")
+        description="Determine the number of the letter, or the nth letter."
+        )
     argparser.add_argument("letter", help="letter (or number) to determine")
     argparser.add_argument(
         "-r", "--reverse", action="store_true", default=False,
-        help="whether to get the letter given the number instead")
+        help="whether to get the letter given the number instead"
+        )
     args = argparser.parse_args(argv)
     if not args.reverse:
         result = letter_number(args.letter)

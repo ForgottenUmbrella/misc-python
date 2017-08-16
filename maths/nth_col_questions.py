@@ -3,7 +3,6 @@
 """Determine which questions to do (by letter) when asked to do the nth
 column.
 """
-import sys
 import argparse
 
 import letter_number
@@ -11,12 +10,12 @@ import letter_number
 
 def main(argv=None):
     """Print question letters for a given column."""
-    if argv is None:
-        argv = sys.argv[1:]
     argparser = argparse.ArgumentParser(
-        description="Determine which questions to do, given a column number.")
+        description="Determine which questions to do, given a column number."
+        )
     argparser.add_argument(
-        "column_number", type=int, help="column number to get questions for")
+        "column_number", type=int, help="column number to get questions for"
+        )
     argparser.add_argument("last_letter", help="letter of last question")
     args = argparser.parse_args(argv)
 
