@@ -14,3 +14,7 @@ Miscellaneous, semi-useless/useful Python scripts.
 * `maths/nth_col_questions.py`: find out which questions are part of the nth
 column of a textbook.
 * `maths/primes.py`: home-grown method of finding primes.
+* `maths/experimental_probability.py`: find out how likely something is to
+  occur.
+* `factortree.py`: make a factor tree.
+* `binomials.py`: expand binomials to any power.
