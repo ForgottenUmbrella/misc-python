@@ -190,11 +190,29 @@ def valid_input(prompt='', valids=None, default=None):
         print('Invalid input: {}'.format(answer))
 
 
-def gram_join(string, splitter=' ', joiner=', ', final_joiner=', and '):
-    """Join a string as specified."""
+def gram_join(string, splitter=" ", joiner=", ", final_joiner=" and "):
+    """Return a split and (perhaps more grammatical) rejoined string.
+
+    Args:
+        string (str): A list as a string to split and rejoin.
+        splitter (str): Delimiter used to split `string` into a list.
+            Defaults to " ".
+        joiner (str): Delimiter used to rejoin the split `string`.
+            Defaults to ", ".
+        final_joiner (str): Delimiter used to join the last element of
+            the split `string`. Defaults to " and ".
+
+    Returns:
+        str: The split and rejoined `string`.
+    """
     string_as_list = string.split(splitter)
-    first_section = joiner.join(string_as_list[:-1])
-    return final_joiner.join([first_section, string_as_list[-1]])
+    list_needs_joining = len(string_as_list) > 1
+    if list_needs_joining:
+        first_section = joiner.join(string_as_list[:-1])
+        gram_string = final_joiner.join([first_section, string_as_list[-1]])
+    else:
+        gram_string = string
+    return gram_string
 
 
 def pluralise(count, single, plural=None):
@@ -210,5 +228,4 @@ def pluralise(count, single, plural=None):
 
     if count == 1:
         return single
-    else:
-        return plural
+    return plural
