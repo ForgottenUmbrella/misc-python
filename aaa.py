@@ -30,7 +30,7 @@ def main(argv=None):
     start = time.time()
     parser = argparser()
     args = parser.parse_args(argv)
-    aaa(args.length, args.characters)
+    aaa(args.length, args.chars)
     end = time.time()
     duration = end - start
     print("Duration:", duration)
