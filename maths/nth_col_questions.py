@@ -13,10 +13,10 @@ def main(argv=None):
     argparser = argparse.ArgumentParser(
         description="Determine which questions to do, given a column number."
         )
+    argparser.add_argument("last_letter", help="letter of last question")
     argparser.add_argument(
         "column_number", type=int, help="column number to get questions for"
         )
-    argparser.add_argument("last_letter", help="letter of last question")
     args = argparser.parse_args(argv)
 
     column_number = args.column_number
