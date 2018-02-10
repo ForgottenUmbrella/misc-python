@@ -1,7 +1,7 @@
 """Output screams."""
 
 import random
-import time
+# import time
 import argparse
 
 
@@ -27,13 +27,13 @@ def aaa(length, chars):
 
 def main(argv=None):
     """Main entry point for the program."""
-    start = time.time()
+    # start = time.time()
     parser = argparser()
     args = parser.parse_args(argv)
     aaa(args.length, args.chars)
-    end = time.time()
-    duration = end - start
-    print("Duration:", duration)
+    # end = time.time()
+    # duration = end - start
+    # print("Duration:", duration)
 
 
 if __name__ == "__main__":
